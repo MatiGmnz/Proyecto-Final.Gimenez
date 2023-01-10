@@ -12,8 +12,10 @@ body{
 }
 
 nav{
-    background-color: #F85900;
+    background: hsla(22, 90%, 57%, 1);
+    background: linear-gradient(180deg, hsla(22, 90%, 57%, 1) 55%, hsla(22, 100%, 49%, 1) 88%);
     height: 75px;
+    box-shadow: 0px 5px 9px -1px rgba(0,0,0,0.59);
 }
 
 footer{
@@ -52,6 +54,10 @@ footer{
     margin-left: 15px;
     color: #D8D8D8;
     text-decoration: none;
+}
+
+.navBar .indice a:hover{
+    color: black;
 }
 
 .navBar .botones{
@@ -115,6 +121,10 @@ footer{
 .servicios div{
     margin-bottom: 75px;
     text-align: center;
+}
+
+.servicios img{
+    width: 100%;
 }
 
 /* Estilos de los elementos en "TURNOS" */
@@ -211,7 +221,7 @@ footer{
     margin-top: 25px;
 }
 
-.box{
+.contactoMain{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -261,4 +271,98 @@ footer{
     grid-area: youtube;
     grid-column: 3 / 4;
     grid-row: 2 / 3;
+}
+
+/* Estilos de formularios de registro y logueo. */
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box form{
+    width: auto;
+    height: auto;
+    padding: 15px;
+    background-color: #D9D9D9;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.box form input{
+    width: 340px;
+    height: 45px;
+    border: none;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: large;
+}
+
+.box form h3{
+    margin-bottom: 15px;
+}
+
+.flechita{
+    background-color: #D9D9D9;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.btnForm{
+    width: 340px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+/* Diseño Responsive */
+
+@media (max-width: 576px) {
+    .navBar{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .profesionales{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-bottom: 25px;
+    }
+
+    .lic img{
+        width: 250px;
+    }
+
+    .lic{
+        margin-bottom: 25px;
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        gap: 20px;
+    }
+
+    .enlaces1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .link{
+        width: 150px;
+        height: auto;
+    }
+    
 }

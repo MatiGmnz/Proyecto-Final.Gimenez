@@ -6,29 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="estilos/styles.css">
+    <link rel="stylesheet" href="../estilos/styles.css">
     <title>Registrarse</title>
 </head>
 <body>
-    <a href="../index.html"><img src="/imagenes/arrowBack.png" alt="Volver"></a>
-    <form action="">
-        <label for="nombre">
-            Nombre: <input type="text" name="nombre" id="nombre1">
-        </label>
-        <label for="apellido">
-            Apellido: <input type="text" name="apellido" id="apellido1">
-        </label>
-        <label for="fecha-nac">
-            Fecha de Nacimiento: <input type="date" name="birthDay" id="birthDay">
-        </label>
-        <label for="mail">
-            Correo Electronico: <input type="email" name="mail" id="mail2">
-        </label>
-        <label for="password">
-            Contraseña: <input type="password" name="password" id="password2">
-        </label>
-        <button type="submit">Registrarse</button>
-    </form>
+    <a href="../index.html"><img class="flechita" src="../imagenes/arrowBack.png" alt="Volver"></a>
+    
+    <div class="box">
+        <form class="registrar" action="">
+            <label for="nombre">
+                Nombre:<br> <input type="text" name="nombre" id="nombre1">
+            </label>
+            <label for="apellido">
+                Apellido:<br> <input type="text" name="apellido" id="apellido1">
+            </label>
+            <label for="fecha-nac">
+                Fecha de Nacimiento:<br> <input type="date" name="birthDay" id="birthDay">
+            </label>
+            <label for="mail">
+                Correo Electronico: <br><input type="email" name="mail" id="mail2">
+            </label>
+            <label for="password">
+                Contraseña:<br> <input type="password" name="password" id="password2">
+            </label>
+            <button class="btn btnForm" type="submit">Registrarse</button>
+        </form>
+    </div>
+    
 
 <script src="/machine/app.js"></script>  
 </body>
