@@ -77,6 +77,19 @@ footer{
     font-size: medium;
 }
 
+.btn:hover{
+    background: hsla(22, 90%, 57%, 1);
+    background: linear-gradient(180deg, hsla(22, 90%, 57%, 1) 55%, hsla(22, 100%, 49%, 1) 88%);
+    color: black;
+}
+
+#clean{
+    width: 45px;
+    height: 35px;
+    text-align: center;
+    padding: 5px;
+}
+
 /* Estilo de las imagenes de "INICIO" */
 
 .profesionales{
