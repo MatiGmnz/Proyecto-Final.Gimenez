@@ -192,58 +192,60 @@ footer{
 
 /* Estilos de "CONTACTOS" */
 
-.filas{
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: 
-    "enlaces1"
-    "enlaces2";
-}
-
-.enlaces1{
-    grid-area: enlaces1;
-    display: grid;
-    grid-template-columns: repeat(5, 500px);
-    grid-template-rows: 1fr ;
-    grid-template-areas: 
-    "none wsp insta face none";
-}
-
-.wsp{
-    grid-area: wsp;
-    grid-column: 2/3 ;
-}
-
-.insta{
-    grid-area: insta;
-    grid-column: 3/4 ;
-}
-
-.face{
-    grid-area: face;
-    grid-column: 4/5 ;
-}
-
 .link{
-    width: 300px;
-    height: 270px;
+    width: 240px;
+    height: 210px;
     margin-top: 25px;
 }
 
-.enlaces2{
-    grid-area: enlaces2;
-    grid-template-columns: repeat(5, 500px);
-    grid-template-rows: 1fr ;
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.enlaces1{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-template-areas: 
-    "none linked none gmail none";
+    "wsp insta face"
+    "linked email youtube"
+    ;
 }
 
-.linked{
+#wsp{
+    grid-area: wsp;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+#insta{
+    grid-area: insta;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+#face{
+    grid-area: face;
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+#linked{
     grid-area: linked;
-    grid-column: 2/3 ;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
 }
 
-.gmail{
+#gmail{
     grid-area: gmail;
-    grid-column: 3/4;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+#youtube{
+    grid-area: youtube;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
 }
