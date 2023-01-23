@@ -221,3 +221,4 @@ inicioSesion.addEventListener("click", () => {
 showTratamientos()
 
 });
+

@@ -1,0 +1,37 @@
+nav {
+	background: hsla(22, 90%, 57%, 1);
+	background: linear-gradient(180deg, hsla(22, 90%, 57%, 1) 55%, hsla(22, 100%, 49%, 1) 88%);
+	height: 75px;
+	box-shadow: 0px 5px 9px -1px rgba(0,0,0,0.59);
+}
+.navBar {
+	display: grid;
+	flex-direction: row;
+	padding: 15px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-areas: "none indice botones";
+	gap: 10px;
+
+	.indice {
+        @include flex(row, center, end);
+		display: flex;
+		grid-area: indice;
+		grid-column: 2/3;
+		a {
+			margin-left: 15px;
+			color: $color_1;
+			text-decoration: none;
+			&:hover {
+				color: $color_2;
+			}
+		}
+	}
+
+	.botones {
+        @include flex(row, center, center);
+		grid-area: botones;
+		grid-column: 3/4;
+		display: flex;
+		gap: 10px;
+	}
+}

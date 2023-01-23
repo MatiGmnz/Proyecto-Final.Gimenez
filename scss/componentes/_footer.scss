@@ -1,0 +1,10 @@
+footer {
+    @include flex(row, start, center);
+	background-color: $background-color_1;
+	padding: 5px;
+	height: 60px;
+	gap: 10px;
+	font-size: small;
+	flex-wrap: wrap;
+	margin-top: 7%;
+}

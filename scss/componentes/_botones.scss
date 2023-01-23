@@ -1,0 +1,37 @@
+.btn {
+	width: 150px;
+	height: 45px;
+	border: 1px solid #BF4500;
+	border-radius: 5px;
+	padding: 14px 14px;
+	color: $color_1;
+	text-align: center;
+	text-decoration: none;
+	background-color: $background-color_2;
+	font-size: medium;
+	&:hover {
+		background: hsla(22, 90%, 57%, 1);
+		background: linear-gradient(180deg, hsla(22, 90%, 57%, 1) 55%, hsla(22, 100%, 49%, 1) 88%);
+		color: $color_2;
+	}
+}
+
+#clean {
+	width: 45px;
+	height: 35px;
+	text-align: center;
+	padding: 5px;
+}
+
+.btnForm {
+	width: 340px;
+	font-size: larger;
+	font-weight: bold;
+}
+
+.flechita {
+	background-color: $background-color_3;
+	border-radius: 5px;
+	margin-top: 5px;
+	margin-left: 5px;
+}

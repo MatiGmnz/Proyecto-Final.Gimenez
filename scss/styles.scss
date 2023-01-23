@@ -1,0 +1,209 @@
+@import "./utilities/variables";
+@import "./utilities/mixins";
+@import "./base/reset";
+@import "./base/typo";
+@import "./layout/mediaQ";
+@import "./componentes/navBar";
+@import "./componentes/footer";
+@import "./componentes/botones";
+
+
+body {
+	font-family: $font-family_1;
+	font-weight: bolder;
+}
+
+
+.profesionales {
+	display: flex;
+	justify-content: space-evenly;
+	margin-bottom: 200px;
+	margin-top: 50px;
+	.lic {
+		text-align: center;
+		font-size: 30px;
+	}
+	img {
+		width: 450px;
+	}
+}
+
+.servicios {
+	h1 {
+		margin-bottom: 65px;
+	}
+	div {
+		margin-bottom: 75px;
+		text-align: center;
+	}
+	img {
+		width: 100%;
+	}
+}
+
+.main {
+    @include flex(row, space-evenly, center);
+	grid-template-columns: repeat(3, 1fr);
+	margin-top: 25px;
+	margin-bottom: 49px;
+}
+
+.take {
+    @include flex(column, start, start);
+	width: 324px;
+	height: 370px;
+	padding: 15px;
+	background-color: $background-color_3;
+	border: none;
+	border-radius: 10px;
+
+	h2 {
+		margin-bottom: 25px;
+	}
+
+	#trat {
+		width: 290px;
+		height: 35px;
+		border: none;
+		margin-bottom: 25px;
+		border-radius: 5px;
+		text-align: center;
+		font-size: large;
+	}
+    
+	#fecha {
+		width: 150px;
+		height: 35px;
+		border: none;
+		margin-bottom: 25px;
+		border-radius: 5px;
+		text-align: center;
+		font-size: large;
+	}
+
+	#hora {
+		width: 91px;
+		height: 35px;
+		border: none;
+		margin-bottom: 25px;
+		border-radius: 5px;
+		text-align: center;
+		font-size: large;
+	}
+
+	#asignar {
+		width: 290px;
+		height: 45px;
+	}
+}
+
+.asign {
+	width: 324px;
+	height: auto;
+	padding: 15px;
+	background-color: $background-color_3;
+	border: none;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: row;
+}
+
+.history {
+	width: 324px;
+	height: 400px;
+	padding: 15px;
+	background-color: $background-color_3;
+	border: none;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	#historial {
+		border: none;
+	}
+}
+
+.link {
+	width: 240px;
+	height: 210px;
+	margin-top: 25px;
+}
+
+.contactoMain {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.enlaces1 {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-template-areas: "wsp insta face" "linked email youtube";
+}
+
+#wsp {
+	grid-area: wsp;
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
+}
+
+#insta {
+	grid-area: insta;
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
+}
+
+#face {
+	grid-area: face;
+	grid-column: 3 / 4;
+	grid-row: 1 / 2;
+}
+
+#linked {
+	grid-area: linked;
+	grid-column: 1 / 2;
+	grid-row: 2 / 3;
+}
+
+#gmail {
+	grid-area: gmail;
+	grid-column: 2 / 3;
+	grid-row: 2 / 3;
+}
+
+#youtube {
+	grid-area: youtube;
+	grid-column: 3 / 4;
+	grid-row: 2 / 3;
+}
+
+.box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	form {
+		width: auto;
+		height: auto;
+		padding: 15px;
+		background-color: $background-color_3;
+		border: none;
+		border-radius: 10px;
+		display: flex;
+		flex-direction: column;
+
+		input {
+			width: 340px;
+			height: 45px;
+			border: none;
+			margin-bottom: 25px;
+			border-radius: 5px;
+			text-align: center;
+			font-size: large;
+		}
+
+		h3 {
+			margin-bottom: 15px;
+		}
+	}
+}

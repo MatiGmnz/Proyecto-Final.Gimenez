@@ -1,368 +1,335 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-/* Acá se estila la navBar y el footer de todos los html */
-
-body{
-    font-family: 'Inter', sans-serif;
-    font-weight: bolder;
-}
-
-nav{
-    background: hsla(22, 90%, 57%, 1);
-    background: linear-gradient(180deg, hsla(22, 90%, 57%, 1) 55%, hsla(22, 100%, 49%, 1) 88%);
-    height: 75px;
-    box-shadow: 0px 5px 9px -1px rgba(0,0,0,0.59);
-}
-
-footer{
-    background-color: #D8D8D8;
-    display: flex;
-    padding: 5px;
-    height: 60px;
-    gap: 10px;
-    justify-content: start;
-    font-size: small;
-    flex-wrap: wrap;
-    margin-top: 7%;
-}
-
-.navBar{
-    display: grid;
-    flex-direction: row;
-    padding: 15px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: 
-    "none indice botones"
-    ;
-    gap: 10px;
-}
-
-.navBar .indice{
-    display: flex;
-    flex-direction: row;
-    grid-area: indice;
-    grid-column: 2/3;
-    justify-content: center;
-    align-items: end;
-}
-
-.navBar .indice a{
-    margin-left: 15px;
-    color: #D8D8D8;
-    text-decoration: none;
-}
-
-.navBar .indice a:hover{
-    color: black;
-}
-
-.navBar .botones{
-    grid-area: botones;
-    grid-column: 3/4;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-}
-
-.btn{
-    width: 150px;
-    height: 45px;
-    border: 1px solid #BF4500;
-    border-radius: 5px;
-    padding: 14px 14px;
-    color: #D8D8D8;
-    text-align: center;
-    text-decoration: none;
-    background-color: #BF4500;
-    font-size: medium;
-}
-
-.btn:hover{
-    background: hsla(22, 90%, 57%, 1);
-    background: linear-gradient(180deg, hsla(22, 90%, 57%, 1) 55%, hsla(22, 100%, 49%, 1) 88%);
-    color: black;
-}
-
-#clean{
-    width: 45px;
-    height: 35px;
-    text-align: center;
-    padding: 5px;
-}
-
-/* Estilo de las imagenes de "INICIO" */
-
-.profesionales{
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 200px;
-    margin-top: 50px;
-}
-
-.profesionales .lic{
-    text-align: center;
-    font-size: 30px;
-}
-
-.profesionales img{
-    width: 450px;
-}
-
-.servicios h1{
-    margin-bottom: 65px;
-}
-
-.servicios div{
-    margin-bottom: 75px;
-    text-align: center;
-}
-
-.servicios img{
-    width: 100%;
-}
-
-/* Estilos de los elementos en "TURNOS" */
-
-.main{
-    display: flex;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: space-evenly;
-    margin-top: 25px;
-    margin-bottom: 49px;
-}
-
-.take{
-    width: 324px;
-    height: 370px;
-    padding: 15px;
-    background-color: #D9D9D9;
-    border: none;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-}
-
-.take h2{
-    margin-bottom: 25px;
-}
-
-.take #trat{
-    width: 290px;
-    height: 35px;
-    border: none;
-    margin-bottom: 25px;
-    border-radius: 5px;
-    text-align: center;
-    font-size: large;
-}
-
-.take #fecha{
-    width: 150px;
-    height: 35px;
-    border: none;
-    margin-bottom: 25px;
-    border-radius: 5px;
-    text-align: center;
-    font-size: large;
-}
-
-.take #hora{
-    width: 91px;
-    height: 35px;
-    border: none;
-    margin-bottom: 25px;
-    border-radius: 5px;
-    text-align: center;
-    font-size: large;
-}
-
-.take #asignar{
-    width: 290px;
-    height: 45px;
-}
-
-.asign{
-    width: 324px;
-    height: auto;
-    padding: 15px;
-    background-color: #D9D9D9;
-    border: none;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: row;
-}
-
-.history{
-    width: 324px;
-    height: 400px;
-    padding: 15px;
-    background-color: #D9D9D9;
-    border: none;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-}
-
-.history #historial{
-    border: none;
-}
-
-/* Estilos de "CONTACTOS" */
-
-.link{
-    width: 240px;
-    height: 210px;
-    margin-top: 25px;
-}
-
-.contactoMain{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.enlaces1{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: 
-    "wsp insta face"
-    "linked email youtube"
-    ;
-}
-
-#wsp{
-    grid-area: wsp;
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-}
-
-#insta{
-    grid-area: insta;
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-}
-
-#face{
-    grid-area: face;
-    grid-column: 3 / 4;
-    grid-row: 1 / 2;
-}
-
-#linked{
-    grid-area: linked;
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-}
-
-#gmail{
-    grid-area: gmail;
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-}
-
-#youtube{
-    grid-area: youtube;
-    grid-column: 3 / 4;
-    grid-row: 2 / 3;
-}
-
-/* Estilos de formularios de registro y logueo. */
-
-.box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.box form{
-    width: auto;
-    height: auto;
-    padding: 15px;
-    background-color: #D9D9D9;
-    border: none;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-}
-
-.box form input{
-    width: 340px;
-    height: 45px;
-    border: none;
-    margin-bottom: 25px;
-    border-radius: 5px;
-    text-align: center;
-    font-size: large;
-}
-
-.box form h3{
-    margin-bottom: 15px;
-}
-
-.flechita{
-    background-color: #D9D9D9;
-    border-radius: 5px;
-    margin-top: 5px;
-    margin-left: 5px;
-}
-
-.btnForm{
-    width: 340px;
-    font-size: larger;
-    font-weight: bold;
-}
-
-/* Diseño Responsive */
 
 @media (max-width: 576px) {
-    .navBar{
-        display: flex;
-        flex-direction: column;
-        height: auto;
-    }
-
-    .profesionales{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        margin-bottom: 25px;
-    }
-
-    .lic img{
-        width: 250px;
-    }
-
-    .lic{
-        margin-bottom: 25px;
-    }
-
-    .main{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
-        gap: 20px;
-    }
-
-    .enlaces1{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-
-    .link{
-        width: 150px;
-        height: auto;
-    }
-    
+  .navBar {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .profesionales {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+  }
+  .lic {
+    margin-bottom: 25px;
+  }
+  .lic img {
+    width: 250px;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+  }
+  .enlaces1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .link {
+    width: 150px;
+    height: auto;
+  }
 }
+nav {
+  background: hsl(22deg, 90%, 57%);
+  background: linear-gradient(180deg, hsl(22deg, 90%, 57%) 55%, hsl(22deg, 100%, 49%) 88%);
+  height: 75px;
+  box-shadow: 0px 5px 9px -1px rgba(0, 0, 0, 0.59);
+}
+
+.navBar {
+  display: grid;
+  flex-direction: row;
+  padding: 15px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "none indice botones";
+  gap: 10px;
+}
+.navBar .indice {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: end;
+  display: flex;
+  grid-area: indice;
+  grid-column: 2/3;
+}
+.navBar .indice a {
+  margin-left: 15px;
+  color: #D8D8D8;
+  text-decoration: none;
+}
+.navBar .indice a:hover {
+  color: black;
+}
+.navBar .botones {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  grid-area: botones;
+  grid-column: 3/4;
+  display: flex;
+  gap: 10px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  background-color: #D8D8D8;
+  padding: 5px;
+  height: 60px;
+  gap: 10px;
+  font-size: small;
+  flex-wrap: wrap;
+  margin-top: 7%;
+}
+
+.btn {
+  width: 150px;
+  height: 45px;
+  border: 1px solid #BF4500;
+  border-radius: 5px;
+  padding: 14px 14px;
+  color: #D8D8D8;
+  text-align: center;
+  text-decoration: none;
+  background-color: #BF4500;
+  font-size: medium;
+}
+.btn:hover {
+  background: hsl(22deg, 90%, 57%);
+  background: linear-gradient(180deg, hsl(22deg, 90%, 57%) 55%, hsl(22deg, 100%, 49%) 88%);
+  color: black;
+}
+
+#clean {
+  width: 45px;
+  height: 35px;
+  text-align: center;
+  padding: 5px;
+}
+
+.btnForm {
+  width: 340px;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.flechita {
+  background-color: #D9D9D9;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: bolder;
+}
+
+.profesionales {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 200px;
+  margin-top: 50px;
+}
+.profesionales .lic {
+  text-align: center;
+  font-size: 30px;
+}
+.profesionales img {
+  width: 450px;
+}
+
+.servicios h1 {
+  margin-bottom: 65px;
+}
+.servicios div {
+  margin-bottom: 75px;
+  text-align: center;
+}
+.servicios img {
+  width: 100%;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 25px;
+  margin-bottom: 49px;
+}
+
+.take {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  width: 324px;
+  height: 370px;
+  padding: 15px;
+  background-color: #D9D9D9;
+  border: none;
+  border-radius: 10px;
+}
+.take h2 {
+  margin-bottom: 25px;
+}
+.take #trat {
+  width: 290px;
+  height: 35px;
+  border: none;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: large;
+}
+.take #fecha {
+  width: 150px;
+  height: 35px;
+  border: none;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: large;
+}
+.take #hora {
+  width: 91px;
+  height: 35px;
+  border: none;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: large;
+}
+.take #asignar {
+  width: 290px;
+  height: 45px;
+}
+
+.asign {
+  width: 324px;
+  height: auto;
+  padding: 15px;
+  background-color: #D9D9D9;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.history {
+  width: 324px;
+  height: 400px;
+  padding: 15px;
+  background-color: #D9D9D9;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.history #historial {
+  border: none;
+}
+
+.link {
+  width: 240px;
+  height: 210px;
+  margin-top: 25px;
+}
+
+.contactoMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.enlaces1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "wsp insta face" "linked email youtube";
+}
+
+#wsp {
+  grid-area: wsp;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+#insta {
+  grid-area: insta;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+#face {
+  grid-area: face;
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+#linked {
+  grid-area: linked;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+#gmail {
+  grid-area: gmail;
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+#youtube {
+  grid-area: youtube;
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box form {
+  width: auto;
+  height: auto;
+  padding: 15px;
+  background-color: #D9D9D9;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.box form input {
+  width: 340px;
+  height: 45px;
+  border: none;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: large;
+}
+.box form h3 {
+  margin-bottom: 15px;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,19 @@
+{
+  "name": "pre-entrega1.gimenez",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatiGmnz/Pre-Entrega2.Gimenez.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MatiGmnz/Pre-Entrega2.Gimenez/issues"
+  },
+  "homepage": "https://github.com/MatiGmnz/Pre-Entrega2.Gimenez#readme"
+}
