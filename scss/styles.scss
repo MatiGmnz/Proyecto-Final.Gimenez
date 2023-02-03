@@ -2,7 +2,6 @@
 @import "./utilities/mixins";
 @import "./base/reset";
 @import "./base/typo";
-@import "./layout/mediaQ";
 @import "./componentes/navBar";
 @import "./componentes/footer";
 @import "./componentes/botones";
@@ -206,4 +205,50 @@ body {
 			margin-bottom: 15px;
 		}
 	}
+}
+
+@media (max-width: 576px) {
+    .navBar{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .profesionales{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-bottom: 25px;
+    }
+
+    .lic img{
+        width: 250px;
+    }
+
+    .lic{
+        margin-bottom: 25px;
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        gap: 20px;
+    }
+
+    .enlaces1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .link{
+        width: 150px;
+        height: auto;
+    }
+    
 }
